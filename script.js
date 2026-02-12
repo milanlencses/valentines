@@ -230,13 +230,16 @@ function setupMusicPlayer() {
     }
 
     // Toggle music on button click
-    musicToggle.addEventListener('click', () => {
-        if (bgMusic.paused) {
-            bgMusic.play();
+musicToggle.addEventListener('click', () => {
+    if (bgMusic.paused) {
+        bgMusic.play().then(() => {
             musicToggle.textContent = config.music.stopText;
-        } else {
-            bgMusic.pause();
-            musicToggle.textContent = config.music.startText;
-        }
-    });
+        }).catch(err => {
+            console.log("Play failed:", err);
+        });
+    } else {
+        bgMusic.pause();
+        musicToggle.textContent = config.music.startText;
+    }
+});
 } 
