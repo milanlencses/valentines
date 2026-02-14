@@ -42,7 +42,7 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "WOOOOW Tényleg ennyire szereetsz?? 🥰🚀💝",  // Shows when they go past 5000%
+        extreme: "WOOOOW Komolyan ennyire szereetsz?? 🥰🚀💝",  // Shows when they go past 5000%
         high: "A végtelenbe és tovább! 🚀💝",              // Shows when they go past 1000%
         normal: "A végtelenbe! 🥰"                           // Shows when they go past 100%
     },
